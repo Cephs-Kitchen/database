@@ -13,3 +13,7 @@ CREATE TABLE tbl_shoppinglist_items (
   item_id int REFERENCES tbl_items ON DELETE CASCADE
 );
 
+-- Create initial shopping list
+INSERT INTO tbl_shoppinglist (list_name, list_created, list_updated) VALUES
+    ('My Shopping List', NOW(), NOW())
+;
