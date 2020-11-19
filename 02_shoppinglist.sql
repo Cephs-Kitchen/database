@@ -10,5 +10,5 @@ CREATE TABLE tbl_shoppinglist (
 CREATE TABLE tbl_shoppinglist_items (
   link_id serial PRIMARY KEY,
   list_id int REFERENCES tbl_shoppinglist ON DELETE CASCADE,
-  item_id int REFERENCES tbl_items ON DELETE CASCADE,
+  item_id int REFERENCES tbl_items ON DELETE CASCADE
 );
