@@ -13,4 +13,17 @@ CREATE TABLE tbl_units (
 );
 
 -- Unit Type entries
-INSERT INTO tbl_unit_types (unit_type_name) VALUES ('volume_liquid'),('volume_dry'),('weight'),('length'),('area'),('temperature');
+INSERT INTO tbl_unit_types (unit_type_name) VALUES ('volume'),('volume_dry'),('weight'),('length'),('area'),('temperature');
+-- volume       = 1
+-- volume_dry   = 2
+-- weight       = 3
+-- length       = 4
+-- area         = 5
+-- temperature  = 6
+
+-- Units
+INSERT INTO tbl_units
+  (unit_name, unit_type_id, unit_base_equivalent)
+VALUES
+  ('cup', 1, 236.5882365),
+;
