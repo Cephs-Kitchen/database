@@ -13,4 +13,4 @@ CREATE TABLE tbl_units (
 );
 
 -- Unit Type entries
-INSERT INTO tbl_unit_types (unit_type_name) VALUES ('volume'),('weight');
+INSERT INTO tbl_unit_types (unit_type_name) VALUES ('volume_liquid'),('volume_dry'),('weight'),('length'),('area'),('temperature');
