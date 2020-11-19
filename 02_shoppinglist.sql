@@ -12,3 +12,4 @@ CREATE TABLE tbl_shoppinglist_items (
   list_id int REFERENCES tbl_shoppinglist ON DELETE CASCADE,
   item_id int REFERENCES tbl_items ON DELETE CASCADE
 );
+
