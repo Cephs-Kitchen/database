@@ -11,3 +11,6 @@ CREATE TABLE tbl_units (
   unit_type_id int REFERENCES tbl_unit_types ON DELETE CASCADE,
   unit_base_equivalent double precision NOT NULL
 );
+
+-- Unit Type entries
+INSERT INTO tbl_unit_types (unit_type_name) VALUES ('volume'),('weight');
