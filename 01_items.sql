@@ -8,5 +8,5 @@ CREATE TABLE tbl_item_categories (
 CREATE TABLE tbl_item (
   item_id serial PRIMARY KEY,
   item_name text NOT NULL,
-  category_id int REFERENCES tbl_item_categories ON DELETE CASCADE,
+  category_id int REFERENCES tbl_item_categories ON DELETE CASCADE
 );
