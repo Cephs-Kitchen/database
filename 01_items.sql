@@ -5,7 +5,7 @@ CREATE TABLE tbl_item_categories (
 );
 
 -- Items
-CREATE TABLE tbl_item (
+CREATE TABLE tbl_items (
   item_id serial PRIMARY KEY,
   item_name text NOT NULL,
   category_id int REFERENCES tbl_item_categories ON DELETE CASCADE
