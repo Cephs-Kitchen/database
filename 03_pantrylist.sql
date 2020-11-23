@@ -7,7 +7,7 @@ CREATE TABLE tbl_pantrylist (
 );
 
 -- Insert Pantry Items
-INSERT INTO tbl_pantrylist (item_id) VALUES
-    (1),
-    (8)
+INSERT INTO tbl_pantrylist (item_id, expiration, amount) VALUES
+    (1, '2020-01-02', 6),
+    (8, '2020-09-13', 2)
 ;
