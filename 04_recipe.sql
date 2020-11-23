@@ -3,7 +3,7 @@ CREATE TABLE tbl_recipes (
   recipe_id serial PRIMARY KEY,
   recipe_name text NOT NULL,
   food_group_id INT,
-  ingredient_list json,
+  ingredient_list json
 );
 
 -- Recipe Entries
@@ -29,7 +29,7 @@ VALUES
     "roasted unsalted peanuts":["1","cup"],
     "tsang bangkok padang peanut sauce":["6","ounce"],
     "head of lettuce":["0.5",""]
-  }'),
+  }')
 ;
 
 -- Food Group List
