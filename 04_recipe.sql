@@ -17,7 +17,7 @@ CREATE TABLE tbl_food_group (
 );
 
 -- Food Group Entries
-INSERT INTO tbl_food_group (food_group_name) VALUES ('Fruits'), ('Vegetables'), (' Grains'), ('Proteins'), ('Dairy');
+INSERT INTO tbl_food_group (food_group_name) VALUES ('Fruits'), ('Vegetables'), ('Grains'), ('Proteins'), ('Dairy');
 -- Fruits = 1
 -- Vegetables = 2
 -- Grains = 3
