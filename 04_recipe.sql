@@ -3,7 +3,8 @@ CREATE TABLE tbl_recipes (
   recipe_id serial PRIMARY KEY,
   recipe_name text NOT NULL,
   food_group_id INT,
-  food_group_name text
+  food_group_name text,
+  item_name text
 );
 
 -- Recipe Entries
