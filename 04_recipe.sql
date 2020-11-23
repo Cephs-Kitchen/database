@@ -7,7 +7,7 @@ CREATE TABLE tbl_recipes (
 );
 
 -- Recipe Entries
-INSERT INTO tbl_recipes (recipe_name, food_group_id) VALUES ('Beef Goulash', 4), ('Lettuce Wraps', 2), ('Blackberry-Apple Cocktail', 1), ('Cheese Omelette', 5), ('Spaghetti Frittata', 3);
+INSERT INTO tbl_recipes (recipe_name, food_group_id, food_group_name) VALUES ('Beef Goulash', 4, 'Proteins'), ('Lettuce Wraps', 2, 'Vegetables'), ('Blackberry-Apple Cocktail', 1, 'Fruits'), ('Cheese Omelette', 5, 'Dairy'), ('Spaghetti Frittata', 3, 'Grains');
 
 -- Food Group List
 CREATE TABLE tbl_food_group (
