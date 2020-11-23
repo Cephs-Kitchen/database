@@ -3,12 +3,34 @@ CREATE TABLE tbl_recipes (
   recipe_id serial PRIMARY KEY,
   recipe_name text NOT NULL,
   food_group_id INT,
-  food_group_name text,
-  ingredient_list text []
+  ingredient_list json,
 );
 
 -- Recipe Entries
-INSERT INTO tbl_recipes (recipe_name, food_group_id, food_group_name, ingredient_list) VALUES ('Beef Goulash', 4, 'Proteins', '{"butter", "oliver oil", "beef tips", "salt and pepper", "onion", "paprika", "beef stock", "sour cream", "egg noodles"}'), ('Lettuce Wraps', 2, 'Vegetables'), ('Blackberry-Apple Cocktail', 1, 'Fruits', '{"blackberries", "apple cider", "simple syrup", "lemon juice", "bourban", "cinnamon sugar"}'), ('Cheese Omelette', 5, 'Dairy'), ('Spaghetti Frittata', 3, 'Grains');
+INSERT INTO tbl_recipes
+  (recipe_name, food_group_id, ingredient_list)
+VALUES
+  ('Beef Goulash', 4, '{
+    "unsalted butter":["0.25","cup"],
+    "olive oil":["0.25","cup"],
+    "beef tips":["5","pound"],
+    "salt and pepper":["",""],
+    "onion":["5","pound"],
+    "paprika":["0.25","cup"],
+    "beef stock":["3","cup"],
+    "sour cream":["",""],
+    "egg noodles":["2","pound"]
+  }'),
+  ('Lettuce Wraps', 2, '{
+    "toasted sesame oil":["1","tablespoon"],
+    "ground turkey":["1","pound"],
+    "frozen stirfry vegetables":["16","ounce"],
+    "broccoli slaw":["1","package"],
+    "roasted unsalted peanuts":["1","cup"],
+    "tsang bangkok padang peanut sauce":["6","ounce"],
+    "head of lettuce":["0.5",""]
+  }'),
+;
 
 -- Food Group List
 CREATE TABLE tbl_food_group (
