@@ -4,11 +4,11 @@ CREATE TABLE tbl_recipes (
   recipe_name text NOT NULL,
   food_group_id INT,
   food_group_name text,
-  item_name text
+  ingredient_list text []
 );
 
 -- Recipe Entries
-INSERT INTO tbl_recipes (recipe_name, food_group_id, food_group_name) VALUES ('Beef Goulash', 4, 'Proteins'), ('Lettuce Wraps', 2, 'Vegetables'), ('Blackberry-Apple Cocktail', 1, 'Fruits'), ('Cheese Omelette', 5, 'Dairy'), ('Spaghetti Frittata', 3, 'Grains');
+INSERT INTO tbl_recipes (recipe_name, food_group_id, food_group_name, ingredient_list) VALUES ('Beef Goulash', 4, 'Proteins', '{"butter", "oliver oil", "beef tips"}'), ('Lettuce Wraps', 2, 'Vegetables'), ('Blackberry-Apple Cocktail', 1, 'Fruits'), ('Cheese Omelette', 5, 'Dairy'), ('Spaghetti Frittata', 3, 'Grains');
 
 -- Food Group List
 CREATE TABLE tbl_food_group (
